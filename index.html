@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Lunar Lander</title>
+  <title>Lunartic</title>
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
@@ -160,7 +160,7 @@
   </div>
   <div id="overlay">
     <div id="overlay-content">
-      <h1 id="title-text">LUNAR LANDER</h1>
+      <h1 id="title-text">LUNARTIC</h1>
       <p id="subtitle-text">A 2D Physics-Based Landing Game</p>
       <p id="instructions" style="color:#AAA; font-size: 10px;">ARROWS / WASD to fly<br>Land softly and upright on pads</p>
       <div id="highscore-display" style="margin-top: 15px; color: #FFD700; font-size: 12px; display: none;">HIGH SCORE: <span id="hs-val">0</span></div>
@@ -471,7 +471,7 @@ function handleStateTransition() {
     }
   } else if (state === 'GAME_OVER') {
     state = 'TITLE';
-    setOverlay('LUNAR LANDER', 'A 2D Physics-Based Landing Game', 'ARROWS / WASD to fly<br>Land softly and upright on pads', 'PRESS SPACE TO START');
+    setOverlay('LUNARTIC', 'A 2D Physics-Based Landing Game', 'ARROWS / WASD to fly<br>Land softly and upright on pads', 'PRESS SPACE TO START');
   }
 }
 
@@ -919,7 +919,7 @@ function gameLoop(timestamp) {
 
 // Start
 initStars();
-setOverlay('LUNAR LANDER', 'A 2D Physics-Based Landing Game', 'ARROWS / WASD to fly<br>Land softly and upright on pads', 'PRESS SPACE TO START');
+setOverlay('LUNARTIC', 'A 2D Physics-Based Landing Game', 'ARROWS / WASD to fly<br>Land softly and upright on pads', 'PRESS SPACE TO START');
 requestAnimationFrame(gameLoop);
 
 </script>
